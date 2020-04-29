@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>
+    <script>
+        var div = document.querySelector('#app');
+        var str = 'hello world';
+        div.innerHTML = str;
+
+        // 여기서 변수 값을 변경한다고 해도, 화면에 반영되지 않는다.
+        str = 'hello world!!!';
+        // 다시 대입해줘야 변경됨.
+        div.innerHTML = str;
+
+    </script>
+</body>
+</html>
